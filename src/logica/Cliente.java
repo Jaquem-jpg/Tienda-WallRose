@@ -43,6 +43,9 @@ public class Cliente {
 		return "Cliente{" + "id=" + idCliente + ", nombre=" + nombre + ", email=" + email + '}';
 	}
 	
+	
+	//Metódos
+	
 }
 
 
