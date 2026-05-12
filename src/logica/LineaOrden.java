@@ -38,5 +38,23 @@ public class LineaOrden {
 	    }
 	    
 	    public double getSubtotal() { return subtotal; }
+	    
+	    
+	 // Método para calcular subtotal
+	    public double calcularSubtotal() {
+	        this.subtotal = cantidad * precioUnitario;
+	        return subtotal;
+	    }
+	    
+	    @Override
+	    public String toString() {
+	        return "LineaOrden{" +
+	               "numero=" + numeroLinea +
+	               ", producto=" + (producto != null ? producto.getNombre() : "null") +
+	               ", cantidad=" + cantidad +
+	               ", subtotal=" + subtotal +
+	               '}';
+	    }
+
 	
 }
