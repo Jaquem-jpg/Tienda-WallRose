@@ -87,7 +87,7 @@ public class Controladora {
     
     public boolean actualizarProducto(int codigo, String nombre, float existencia, String unidad, double precio) {
         for (Producto p : productos) {
-            if (p.getCodigo() == codigo) {
+            if (p.getCodigoProducto() == codigo) {
                 p.setNombre(nombre);
                 p.setExistencia(existencia);
                 p.setUnidad(unidad);
