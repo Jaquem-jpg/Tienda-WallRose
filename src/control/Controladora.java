@@ -80,8 +80,8 @@ public class Controladora {
     
     // ========== MÉTODOS DE PRODUCTOS ==========
     
-    public boolean crearProducto(int codigo, String nombre, float existencia, String unidad, double precio) {
-        Producto nuevo = new Producto(codigo, codigo, existencia, nombre, 0, precio, unidad);
+    public boolean crearProducto(int codigoProducto, String nombre, float existencia, String unidad, double precio) {
+        Producto nuevo = new Producto(codigoProducto, existencia, nombre, 0, precio, unidad);
         return productos.add(nuevo);
     }
     
@@ -245,5 +245,14 @@ public class Controladora {
             }
         }
         return resultado;
+    }
+    
+    public OrdenCompra obtenerPorNumeroOrden(int numOrden) {
+        for (OrdenCompra o : ordenes) {
+            if (o.getNumeroOrden() == numOrden) {
+                return o;
+            }
+        }
+        return null;
     }
 }

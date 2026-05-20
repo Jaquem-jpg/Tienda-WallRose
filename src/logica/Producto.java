@@ -81,8 +81,8 @@ public class Producto {
 	 
 	 //Métodos
 	  
-	    public boolean actualizarProducto(int codigo, String nombre, float existencia, String unidad, double precio) {
-	        if (this.codigo == codigo || this.codigoProducto == codigo) {
+	    public boolean actualizarProducto(int codigoProducto, String nombre, float existencia, String unidad, double precio) {
+	        if (this.codigoProducto == codigo || this.codigoProducto == codigo) {
 	            this.nombre = nombre;
 	            this.existencia = existencia;
 	            this.unidad = unidad;
@@ -92,8 +92,8 @@ public class Producto {
 	        return false;
 	    }
 	    
-	    public boolean borrarProducto(int codigo) {
-	        return (this.codigo == codigo || this.codigoProducto == codigo);
+	    public boolean borrarProducto(int codigoProducto) {
+	        return (this.codigoProducto == codigo || this.codigoProducto == codigo);
 	    }
 	    
 	    public boolean crearProducto(String nombre, Float existencia, String unidad, double precio) {
@@ -104,8 +104,8 @@ public class Producto {
 	        return true;
 	    }
 	    
-	    public Producto obtenerDatos(int codigo) {
-	        if (this.codigo == codigo || this.codigoProducto == codigo) {
+	    public Producto obtenerDatos(int codigoProdcuto) {
+	        if (this.codigoProducto == codigo || this.codigoProducto == codigo) {
 	            return this;
 	        }
 	        return null;

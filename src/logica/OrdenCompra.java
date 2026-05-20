@@ -78,7 +78,7 @@ public class OrdenCompra {
     // 1. agregarLinea(int, int, float): boolean
     public boolean agregarLinea(int cantidad, int codigoProducto, float precioUnitario) {
         // Buscar producto (simulado)
-        Producto producto = new Producto(codigoProducto, codigoProducto, 0, "Producto " + codigoProducto, 0, precioUnitario, "unidad");
+        Producto producto = new Producto(codigoProducto,  0, "Producto " + codigoProducto, 0, precioUnitario, "unidad");
         int numLinea = lineas.size() + 1;
         LineaOrden nuevaLinea = new LineaOrden(numLinea, producto, cantidad, precioUnitario);
         return lineas.add(nuevaLinea);
